@@ -80,13 +80,11 @@ elif figura == "Esfera ⚪":
     )
 
     volumen = (4 / 3) * math.pi * radio ** 3
-    area_lateral = 4 * math.pi * radio ** 2
-    area_total = area_lateral
+    area_total = 4 * math.pi * radio ** 2
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     col1.metric("📦 Volumen", f"{volumen:.2f} u³")
-    col2.metric("🔵 Área lateral", f"{area_lateral:.2f} u²")
-    col3.metric("🟣 Área total", f"{area_total:.2f} u²")
+    col2.metric("🟣 Área total", f"{area_total:.2f} u²")
 
     # -------- Gráfica 3D de la Esfera --------
     fig = plt.figure()
@@ -115,6 +113,9 @@ st.info("📌 u representa la unidad de longitud. Áreas en u² y volúmenes en 
 st.caption("📚 Aprende geometría jugando con cuerpos en 3D")
 
 
+
+   
+   
     
     
 
